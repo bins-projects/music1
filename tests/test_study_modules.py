@@ -54,6 +54,8 @@ def test_study_module_assets_are_in_the_offline_cache():
         "./data/study-modules.json",
         "./data/study-modules/pharm-test-review-matched-2026.prepflow-module.json",
         "./data/study-modules/pharm-test-review-related-expanded-2026.prepflow-module.json",
+        "./data/study-modules/pharm-test-prediction-50-2026.prepflow-module.json",
+        "./data/study-modules/pharm-test-review-50-trial-2026.prepflow-module.json",
     ):
         assert asset in service_worker
 

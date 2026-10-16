@@ -31,6 +31,16 @@
       "supplemental_pack_paths": {
         "appendix_d": "../packs/appendix_d.prepflow.json"
       }
+    },
+    {
+      "id": "pharm-test-review-50-trial-2026",
+      "title": "Pharm Test Review — 50-Question Trial",
+      "description": "A bank-based 50-question trial across cancer, endocrine, diabetes, and Appendix D review topics.",
+      "question_count": 50,
+      "manifest_path": "./data/study-modules/pharm-test-review-50-trial-2026.prepflow-module.json",
+      "supplemental_pack_paths": {
+        "appendix_d": "../packs/appendix_d.prepflow.json"
+      }
     }
   ]
 }
