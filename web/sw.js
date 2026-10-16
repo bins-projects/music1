@@ -35,6 +35,7 @@ const APP_FILES = [
   "./data/study-modules/pharm-test-review-matched-2026.prepflow-module.json",
   "./data/study-modules/pharm-test-review-related-expanded-2026.prepflow-module.json",
   "./data/study-modules/pharm-test-prediction-50-2026.prepflow-module.json",
+  "./data/study-modules/pharm-test-review-50-trial-2026.prepflow-module.json",
   "./drug-reference.css",
   "./drug-reference.js",
   "./drug-reference-batch-loader.js",
