@@ -9,7 +9,6 @@ const quizBuilderScreen = document.querySelector("#quiz-builder-screen");
 const studyModulesScreen = document.querySelector("#study-modules-screen");
 const openQuizBuilderButton = document.querySelector("#open-quiz-builder");
 const openStudyModulesButton = document.querySelector("#open-study-modules");
-const resumeStudyModulesButton = document.querySelector("#resume-study-modules");
 const closeStudyModulesButton = document.querySelector("#close-study-modules");
 const studyModulesList = document.querySelector("#study-module-list");
 const studyModulesStatus = document.querySelector("#study-modules-status");
@@ -1570,7 +1569,6 @@ summaryAction.addEventListener("click", () => {
 
 openQuizBuilderButton.addEventListener("click", showQuizBuilder);
 openStudyModulesButton.addEventListener("click", showStudyModules);
-resumeStudyModulesButton.addEventListener("click", showStudyModules);
 closeStudyModulesButton.addEventListener("click", () => {
   showSubjects();
 });
