@@ -1,1 +1,1 @@
-self.PREPFLOW_PACK_PRECACHE = {"version": "landscape-reading-restore-20260817-1", "urls": ["../packs/fundamentals.prepflow.json", "../packs/medical_surgical.prepflow.json", "../packs/pediatrics.prepflow.json", "../packs/pharmacy.prepflow.json"]};
+self.PREPFLOW_PACK_PRECACHE = {"version": "pharm-review-modules-20261016-1", "urls": ["../packs/fundamentals.prepflow.json", "../packs/medical_surgical.prepflow.json", "../packs/pediatrics.prepflow.json", "../packs/pharmacy.prepflow.json", "../packs/appendix_d.prepflow.json"]};

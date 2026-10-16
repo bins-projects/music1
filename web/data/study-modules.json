@@ -1,0 +1,26 @@
+{
+  "format": "prepflow_study_module_catalog",
+  "version": "1.0",
+  "modules": [
+    {
+      "id": "pharm-cancer-endo-diabetes-review-matched-2026",
+      "title": "Pharm Test Review \u2014 Focused",
+      "description": "Questions selected for the cancer, endocrine, diabetes, and Appendix D test review.",
+      "question_count": 169,
+      "manifest_path": "./data/study-modules/pharm-test-review-matched-2026.prepflow-module.json",
+      "supplemental_pack_paths": {
+        "appendix_d": "../packs/appendix_d.prepflow.json"
+      }
+    },
+    {
+      "id": "pharm-cancer-endo-diabetes-related-expanded-2026",
+      "title": "Pharm Test Review \u2014 Expanded Practice",
+      "description": "A broader 269-question practice set related to the same review topics; not every item is a confirmed review match.",
+      "question_count": 269,
+      "manifest_path": "./data/study-modules/pharm-test-review-related-expanded-2026.prepflow-module.json",
+      "supplemental_pack_paths": {
+        "appendix_d": "../packs/appendix_d.prepflow.json"
+      }
+    }
+  ]
+}

@@ -116,6 +116,7 @@
   <link rel="stylesheet" href="approved-book-buttons.css?v=20260724-books-1">
   <link rel="stylesheet" href="hospital-home.css?v=20260726-text-glow-1">
   <link rel="stylesheet" href="quiz-builder-screen.css?v=20260728-openbook-consolidated-1">
+  <link rel="stylesheet" href="study-modules.css?v=20261016-pharm-review-1">
   <link rel="stylesheet" href="mobile-portrait.css?v=20260731-drug-reference-1">
   <link rel="stylesheet" href="generic-pack-catalog.css">
   <link rel="stylesheet" href="canonical-question-types.css">
@@ -144,6 +145,10 @@
               <span class="command-label">Build Your Quiz</span>
               <span aria-hidden="true">▶</span>
             </button>
+            <button id="open-study-modules" class="home-start-quiz" type="button">
+              <span class="command-label">Final Study</span>
+              <span aria-hidden="true">▶</span>
+            </button>
           </section>
 
           <section id="resume-panel" class="launcher-view launcher-resume" aria-label="Saved quiz" hidden>
@@ -159,6 +164,10 @@
             </button>
             <button id="discard-session" class="home-clear-selections">
               <span class="command-label">Build a New Quiz</span>
+            </button>
+            <button id="resume-study-modules" class="home-start-quiz" type="button">
+              <span class="command-label">Final Study</span>
+              <span aria-hidden="true">▶</span>
             </button>
           </section>
         </section>
@@ -243,6 +252,20 @@
             <button id="build-quiz" class="start-button" disabled><span class="command-label">Start<br>Quiz</span></button>
           </div>
         </section>
+      </div>
+    </section>
+
+    <section id="study-modules-screen" class="study-modules-screen" hidden aria-label="Standalone study modules">
+      <div class="study-modules-window">
+        <header class="study-modules-header">
+          <div>
+            <h2>Final Study Modules</h2>
+            <p>Choose a saved review set. Questions use PrepFlow’s standard quiz, answer, and rationale flow.</p>
+          </div>
+          <button id="close-study-modules" class="secondary-button" type="button">← Home</button>
+        </header>
+        <div id="study-module-list" class="study-module-list" aria-live="polite"></div>
+        <p id="study-modules-status" class="study-modules-status" role="status" hidden></p>
       </div>
     </section>
 

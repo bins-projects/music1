@@ -1,0 +1,122 @@
+.study-modules-screen {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+  padding: clamp(16px, 4vw, 48px);
+  background: radial-gradient(circle at top, #1d3153, #080d1b 72%);
+  color: #f2dfb6;
+}
+
+.study-modules-screen[hidden] {
+  display: none !important;
+}
+
+.study-modules-window {
+  width: min(900px, 100%);
+  max-height: 100%;
+  overflow: auto;
+  padding: clamp(18px, 3vw, 32px);
+  border: 2px solid rgba(238, 193, 104, 0.8);
+  background: rgba(5, 10, 28, 0.97);
+  box-shadow: 0 0 0 4px rgba(8, 12, 37, 0.9), 0 18px 48px rgba(0, 0, 0, 0.45);
+}
+
+.study-modules-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.study-modules-header h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font: 900 clamp(1.25rem, 3vw, 2rem) "Courier New", monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.study-modules-header p {
+  max-width: 640px;
+  margin: 0;
+  color: #c8dcff;
+  line-height: 1.5;
+}
+
+.study-module-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 16px;
+}
+
+.study-module-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border: 2px solid #4d6eb8;
+  background: linear-gradient(145deg, rgba(24, 45, 77, 0.95), rgba(8, 13, 34, 0.98));
+}
+
+.study-module-card h3 {
+  margin: 0 0 8px;
+  color: #fff;
+  font: 900 1rem "Courier New", monospace;
+}
+
+.study-module-card p {
+  margin: 0 0 12px;
+  color: #c8dcff;
+  line-height: 1.45;
+}
+
+.study-module-card small {
+  color: #72d63c;
+  font: 800 0.8rem "Courier New", monospace;
+  text-transform: uppercase;
+}
+
+.study-module-start {
+  min-width: 112px;
+  padding: 12px 14px;
+  border: 2px solid #72d63c;
+  background: #0c2e25;
+  color: #eaffdf;
+  font: 900 0.8rem "Courier New", monospace;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.study-module-start:hover,
+.study-module-start:focus-visible {
+  background: #174f38;
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.study-modules-status {
+  margin: 20px 0 0;
+  padding: 12px;
+  border: 1px solid #de7070;
+  color: #ffdada;
+}
+
+@media (max-width: 560px) {
+  .study-modules-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .study-module-card {
+    grid-template-columns: 1fr;
+  }
+
+  .study-module-start {
+    width: 100%;
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "format": "prepflow_module_selection",
+  "version": "1.0",
+  "module_id": "pharm-cancer-endo-diabetes-review-matched-2026",
+  "title": "Pharm Test Review Matched Questions",
+  "description": "Question-level pool selected across Pharmacology and Medical-Surgical banks for the teacher’s Pharm diabetes/endocrine review bullets and Appendix D anticancer-drug topics. Med-Surg questions are included only when their stems directly match a review topic or Appendix D treatment/safety content.",
+  "behavior": {
+    "navigation": "subject_then_chapter",
+    "delivery": "one_question_at_a_time",
+    "scoring": "first_attempt_by_chapter",
+    "shuffle": "once_per_chapter",
+    "reuse_existing_quiz_engine": true
+  },
+  "groups": [
+    {
+      "subject": "Pharmacology",
+      "source_pack_id": "pharmacy",
+      "chapters": [
+        {
+          "source_chapter": 5,
+          "title": "Dosage Calculation Of Intravenous Solutions And Drugs",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-pharmacy-000000162",
+            "PFQ-pharmacy-000000167"
+          ]
+        },
+        {
+          "source_chapter": 19,
+          "title": "Drug Therapy for Gastrointestinal Problems",
+          "expected_question_count": 3,
+          "question_ids": [
+            "PFQ-pharmacy-000000839",
+            "PFQ-pharmacy-000000843",
+            "PFQ-pharmacy-000000872"
+          ]
+        },
+        {
+          "source_chapter": 21,
+          "title": "Drug Therapy for Diabetes",
+          "expected_question_count": 43,
+          "question_ids": [
+            "PFQ-pharmacy-000000919",
+            "PFQ-pharmacy-000000920",
+            "PFQ-pharmacy-000000921",
+            "PFQ-pharmacy-000000923",
+            "PFQ-pharmacy-000000924",
+            "PFQ-pharmacy-000000925",
+            "PFQ-pharmacy-000000927",
+            "PFQ-pharmacy-000000928",
+            "PFQ-pharmacy-000000929",
+            "PFQ-pharmacy-000000930",
+            "PFQ-pharmacy-000000931",
+            "PFQ-pharmacy-000000932",
+            "PFQ-pharmacy-000000934",
+            "PFQ-pharmacy-000000937",
+            "PFQ-pharmacy-000000938",
+            "PFQ-pharmacy-000000939",
+            "PFQ-pharmacy-000000940",
+            "PFQ-pharmacy-000000941",
+            "PFQ-pharmacy-000000942",
+            "PFQ-pharmacy-000000943",
+            "PFQ-pharmacy-000000944",
+            "PFQ-pharmacy-000000945",
+            "PFQ-pharmacy-000000946",
+            "PFQ-pharmacy-000000947",
+            "PFQ-pharmacy-000000948",
+            "PFQ-pharmacy-000000949",
+            "PFQ-pharmacy-000000950",
+            "PFQ-pharmacy-000000951",
+            "PFQ-pharmacy-000000952",
+            "PFQ-pharmacy-000000953",
+            "PFQ-pharmacy-000000954",
+            "PFQ-pharmacy-000000955",
+            "PFQ-pharmacy-000000956",
+            "PFQ-pharmacy-000000958",
+            "PFQ-pharmacy-000000959",
+            "PFQ-pharmacy-000000962",
+            "PFQ-pharmacy-000000966",
+            "PFQ-pharmacy-000000967",
+            "PFQ-pharmacy-000000969",
+            "PFQ-pharmacy-000000970",
+            "PFQ-pharmacy-000000971",
+            "PFQ-pharmacy-000000972",
+            "PFQ-pharmacy-000000978"
+          ]
+        },
+        {
+          "source_chapter": 22,
+          "title": "Drug Therapy for Thyroid and Adrenal Gland Problems",
+          "expected_question_count": 27,
+          "question_ids": [
+            "PFQ-pharmacy-000000979",
+            "PFQ-pharmacy-000000980",
+            "PFQ-pharmacy-000000982",
+            "PFQ-pharmacy-000000983",
+            "PFQ-pharmacy-000000986",
+            "PFQ-pharmacy-000000987",
+            "PFQ-pharmacy-000000988",
+            "PFQ-pharmacy-000000989",
+            "PFQ-pharmacy-000000990",
+            "PFQ-pharmacy-000000991",
+            "PFQ-pharmacy-000000992",
+            "PFQ-pharmacy-000000996",
+            "PFQ-pharmacy-000000997",
+            "PFQ-pharmacy-000000999",
+            "PFQ-pharmacy-000001000",
+            "PFQ-pharmacy-000001002",
+            "PFQ-pharmacy-000001003",
+            "PFQ-pharmacy-000001004",
+            "PFQ-pharmacy-000001005",
+            "PFQ-pharmacy-000001006",
+            "PFQ-pharmacy-000001007",
+            "PFQ-pharmacy-000001009",
+            "PFQ-pharmacy-000001010",
+            "PFQ-pharmacy-000001011",
+            "PFQ-pharmacy-000001012",
+            "PFQ-pharmacy-000001013",
+            "PFQ-pharmacy-000001016"
+          ]
+        },
+        {
+          "source_chapter": 28,
+          "title": "Drug Therapy For Male Reproductive Problems",
+          "expected_question_count": 4,
+          "question_ids": [
+            "PFQ-pharmacy-000001225",
+            "PFQ-pharmacy-000001265",
+            "PFQ-pharmacy-000001266",
+            "PFQ-pharmacy-000001280"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Medical-Surgical",
+      "source_pack_id": "medical_surgical",
+      "chapters": [
+        {
+          "source_chapter": 7,
+          "title": "The Patient with Cancer",
+          "expected_question_count": 11,
+          "question_ids": [
+            "PFQ-medical_surgical-000000183",
+            "PFQ-medical_surgical-000000184",
+            "PFQ-medical_surgical-000000187",
+            "PFQ-medical_surgical-000000188",
+            "PFQ-medical_surgical-000000189",
+            "PFQ-medical_surgical-000000192",
+            "PFQ-medical_surgical-000000193",
+            "PFQ-medical_surgical-000000194",
+            "PFQ-medical_surgical-000000205",
+            "PFQ-medical_surgical-000000206",
+            "PFQ-medical_surgical-000000208"
+          ]
+        },
+        {
+          "source_chapter": 31,
+          "title": "Immunologic System Introduction",
+          "expected_question_count": 3,
+          "question_ids": [
+            "PFQ-medical_surgical-000000763",
+            "PFQ-medical_surgical-000000764",
+            "PFQ-medical_surgical-000000766"
+          ]
+        },
+        {
+          "source_chapter": 32,
+          "title": "Immunologic Disorders",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-medical_surgical-000000801",
+            "PFQ-medical_surgical-000000803"
+          ]
+        },
+        {
+          "source_chapter": 47,
+          "title": "Endocrine System Introduction",
+          "expected_question_count": 6,
+          "question_ids": [
+            "PFQ-medical_surgical-000001116",
+            "PFQ-medical_surgical-000001117",
+            "PFQ-medical_surgical-000001119",
+            "PFQ-medical_surgical-000001120",
+            "PFQ-medical_surgical-000001121",
+            "PFQ-medical_surgical-000001122"
+          ]
+        },
+        {
+          "source_chapter": 48,
+          "title": "Pituitary and Adrenal Disorders",
+          "expected_question_count": 16,
+          "question_ids": [
+            "PFQ-medical_surgical-000001125",
+            "PFQ-medical_surgical-000001126",
+            "PFQ-medical_surgical-000001127",
+            "PFQ-medical_surgical-000001128",
+            "PFQ-medical_surgical-000001130",
+            "PFQ-medical_surgical-000001132",
+            "PFQ-medical_surgical-000001133",
+            "PFQ-medical_surgical-000001134",
+            "PFQ-medical_surgical-000001135",
+            "PFQ-medical_surgical-000001137",
+            "PFQ-medical_surgical-000001138",
+            "PFQ-medical_surgical-000001139",
+            "PFQ-medical_surgical-000001140",
+            "PFQ-medical_surgical-000001143",
+            "PFQ-medical_surgical-000001145",
+            "PFQ-medical_surgical-000001146"
+          ]
+        },
+        {
+          "source_chapter": 49,
+          "title": "Thyroid and Parathyroid Disorders",
+          "expected_question_count": 20,
+          "question_ids": [
+            "PFQ-medical_surgical-000001148",
+            "PFQ-medical_surgical-000001149",
+            "PFQ-medical_surgical-000001150",
+            "PFQ-medical_surgical-000001151",
+            "PFQ-medical_surgical-000001152",
+            "PFQ-medical_surgical-000001153",
+            "PFQ-medical_surgical-000001154",
+            "PFQ-medical_surgical-000001155",
+            "PFQ-medical_surgical-000001156",
+            "PFQ-medical_surgical-000001157",
+            "PFQ-medical_surgical-000001159",
+            "PFQ-medical_surgical-000001160",
+            "PFQ-medical_surgical-000001161",
+            "PFQ-medical_surgical-000001162",
+            "PFQ-medical_surgical-000001163",
+            "PFQ-medical_surgical-000001164",
+            "PFQ-medical_surgical-000001165",
+            "PFQ-medical_surgical-000001166",
+            "PFQ-medical_surgical-000001167",
+            "PFQ-medical_surgical-000001168"
+          ]
+        },
+        {
+          "source_chapter": 50,
+          "title": "Diabetes and Hypoglycemia",
+          "expected_question_count": 27,
+          "question_ids": [
+            "PFQ-medical_surgical-000001170",
+            "PFQ-medical_surgical-000001171",
+            "PFQ-medical_surgical-000001172",
+            "PFQ-medical_surgical-000001173",
+            "PFQ-medical_surgical-000001174",
+            "PFQ-medical_surgical-000001176",
+            "PFQ-medical_surgical-000001177",
+            "PFQ-medical_surgical-000001178",
+            "PFQ-medical_surgical-000001179",
+            "PFQ-medical_surgical-000001180",
+            "PFQ-medical_surgical-000001181",
+            "PFQ-medical_surgical-000001182",
+            "PFQ-medical_surgical-000001183",
+            "PFQ-medical_surgical-000001184",
+            "PFQ-medical_surgical-000001185",
+            "PFQ-medical_surgical-000001186",
+            "PFQ-medical_surgical-000001187",
+            "PFQ-medical_surgical-000001188",
+            "PFQ-medical_surgical-000001189",
+            "PFQ-medical_surgical-000001190",
+            "PFQ-medical_surgical-000001191",
+            "PFQ-medical_surgical-000001193",
+            "PFQ-medical_surgical-000001194",
+            "PFQ-medical_surgical-000001195",
+            "PFQ-medical_surgical-000001196",
+            "PFQ-medical_surgical-000001197",
+            "PFQ-medical_surgical-000001198"
+          ]
+        },
+        {
+          "source_chapter": 52,
+          "title": "Female Reproductive Disorders",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-medical_surgical-000001211",
+            "PFQ-medical_surgical-000001222"
+          ]
+        },
+        {
+          "source_chapter": 53,
+          "title": "Male Reproductive System Introduction",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-medical_surgical-000001226",
+            "PFQ-medical_surgical-000001229"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Appendix D",
+      "source_pack_id": "appendix_d",
+      "chapters": [
+        {
+          "source_chapter": 1,
+          "title": "Metastasis Case",
+          "expected_question_count": 1,
+          "question_ids": [
+            "PFQ-appendix_d-000000001"
+          ]
+        }
+      ]
+    }
+  ],
+  "expected_question_count": 169
+}
