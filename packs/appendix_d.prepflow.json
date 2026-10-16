@@ -1,0 +1,38 @@
+{
+  "format": "prepflow_pack",
+  "version": "1.0",
+  "pack_id": "appendix_d",
+  "title": "Appendix D Cancer Case",
+  "questions": [
+    {
+      "id": "PFQ-appendix_d-000000001",
+      "chapter": 1,
+      "chapter_title": "Metastasis Case",
+      "type": "multiple_choice",
+      "stem": "A patient treated successfully for breast cancer years ago is now diagnosed with metastases in the hip, spine, liver, and brain. She asks why cancer has appeared in those places when the original cancer was in her breast. What is the best response?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "The cancer in those organs is unrelated to the original breast cancer."
+        },
+        {
+          "label": "B",
+          "text": "Breast cancer cells can spread to distant sites and form metastatic tumors there."
+        },
+        {
+          "label": "C",
+          "text": "The original breast tumor must have changed into a benign tumor."
+        },
+        {
+          "label": "D",
+          "text": "Cancer can spread only to nearby lymph nodes, not distant organs."
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "rationale": "Cancer cells can leave the original tumor, travel to distant sites, and grow there. This spread is called metastasis; the breast remains the primary site and the tumors in distant organs are metastatic or secondary tumors.",
+      "source_record_id": "Appendix-D-Slides-35-36"
+    }
+  ]
+}

@@ -6,7 +6,13 @@ const subjects = document.querySelector(".subjects");
 const status = document.querySelector("#status");
 const homeLauncher = document.querySelector("#home-launcher");
 const quizBuilderScreen = document.querySelector("#quiz-builder-screen");
+const studyModulesScreen = document.querySelector("#study-modules-screen");
 const openQuizBuilderButton = document.querySelector("#open-quiz-builder");
+const openStudyModulesButton = document.querySelector("#open-study-modules");
+const resumeStudyModulesButton = document.querySelector("#resume-study-modules");
+const closeStudyModulesButton = document.querySelector("#close-study-modules");
+const studyModulesList = document.querySelector("#study-module-list");
+const studyModulesStatus = document.querySelector("#study-modules-status");
 const closeQuizBuilderButton = document.querySelector("#close-quiz-builder");
 const doneChaptersButton = document.querySelector("#done-chapters");
 const quizBuilderOpenBook = document.querySelector("#quiz-builder-openbook");
@@ -71,6 +77,8 @@ const loadedPacks = new Map();
 const selectedChapters = new Map();
 let packCatalog = [];
 let packCatalogPromise = null;
+let studyModules = [];
+let studyModulesPromise = null;
 
 let sessionQuestions = [];
 let sessionBlockSize = 15;
@@ -186,6 +194,7 @@ function hideAllScreens() {
   subjects.hidden = true;
   homeLauncher.hidden = true;
   quizBuilderScreen.hidden = true;
+  studyModulesScreen.hidden = true;
   quizBuilder.hidden = true;
   resumePanel.hidden = true;
   chapterScreen.hidden = true;
@@ -308,6 +317,70 @@ function showQuizBuilder() {
   subjects.hidden = false;
 
   updateSelectionStatus();
+}
+
+async function loadStudyModules() {
+  if (studyModulesPromise) return studyModulesPromise;
+
+  studyModulesPromise = fetch("./data/study-modules.json")
+    .then((response) => {
+      if (!response.ok) throw new Error("Could not load study modules.");
+      return response.json();
+    })
+    .then((catalog) => {
+      if (catalog.format !== "prepflow_study_module_catalog" || !Array.isArray(catalog.modules)) {
+        throw new Error("The study-module catalog has an unsupported format.");
+      }
+      studyModules = catalog.modules;
+      return studyModules;
+    })
+    .catch((error) => {
+      studyModulesPromise = null;
+      throw error;
+    });
+
+  return studyModulesPromise;
+}
+
+function renderStudyModules(modules) {
+  studyModulesList.replaceChildren();
+
+  modules.forEach((module) => {
+    const card = document.createElement("article");
+    card.className = "study-module-card";
+
+    const details = document.createElement("div");
+    const title = document.createElement("h3");
+    title.textContent = module.title;
+    const description = document.createElement("p");
+    description.textContent = module.description;
+    const count = document.createElement("small");
+    count.textContent = module.question_count.toLocaleString() + " questions";
+    details.append(title, description, count);
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "study-module-start";
+    button.dataset.studyModuleId = module.id;
+    button.textContent = "Start Study";
+
+    card.append(details, button);
+    studyModulesList.append(card);
+  });
+}
+
+async function showStudyModules() {
+  document.body.classList.remove("builder-open", "book-open", "real-book-chapters");
+  hideAllScreens();
+  studyModulesScreen.hidden = false;
+  studyModulesStatus.hidden = true;
+
+  try {
+    renderStudyModules(await loadStudyModules());
+  } catch (error) {
+    studyModulesStatus.textContent = error.message;
+    studyModulesStatus.hidden = false;
+  }
 }
 
 function bookButton(book) {
@@ -1093,6 +1166,32 @@ function completeFirstPassBlock() {
   showFinalSummary();
 }
 
+function startSelectedQuestions(selectedQuestions, subjectTitle) {
+  sessionShuffleQuestions = shuffleQuestionsToggle.checked;
+  sessionQuestions = PrepFlowOrderRules.orderQuestions(
+    selectedQuestions,
+    sessionShuffleQuestions
+  );
+
+  if (sessionQuestions.length === 0) {
+    status.hidden = false;
+    status.textContent =
+      "No supported PrepFlow questions were found in that selection.";
+    return;
+  }
+
+  currentSubject = subjectTitle || "Custom Quiz";
+  sessionBlockSize = Number(globalBlockSizeSelect.value) || 15;
+
+  blockStart = 0;
+  blockNumber = 1;
+  firstPassCorrect = 0;
+  firstPassMissed = 0;
+  firstPassSkipped = 0;
+
+  beginBlock();
+}
+
 async function startQuiz() {
   const selectedQuestions = [];
 
@@ -1126,29 +1225,83 @@ async function startQuiz() {
     return;
   }
 
-  sessionShuffleQuestions = shuffleQuestionsToggle.checked;
-  sessionQuestions = PrepFlowOrderRules.orderQuestions(
-    selectedQuestions,
-    sessionShuffleQuestions
-  );
+  startSelectedQuestions(selectedQuestions, "Custom Quiz");
+}
 
-  if (sessionQuestions.length === 0) {
-    status.hidden = false;
-    status.textContent =
-      "No supported PrepFlow questions were found in that selection.";
-    return;
+async function launchStudyModule(moduleRecord) {
+  studyModulesStatus.hidden = true;
+
+  try {
+    await loadBookCatalog();
+
+    const response = await fetch(moduleRecord.manifest_path);
+    if (!response.ok) throw new Error("Could not load " + moduleRecord.title + ".");
+    const module = await response.json();
+    if (
+      module.format !== "prepflow_module_selection"
+      || module.module_id !== moduleRecord.id
+      || !Array.isArray(module.groups)
+    ) {
+      throw new Error("The selected study module has an unsupported format.");
+    }
+
+    const packPaths = new Map(
+      packCatalog.map((pack) => [pack.id, pack.path])
+    );
+    Object.entries(moduleRecord.supplemental_pack_paths || {}).forEach(
+      ([packId, packPath]) => packPaths.set(packId, packPath)
+    );
+
+    const selectedQuestions = [];
+    const seenQuestionRefs = new Set();
+    const supportedTypes = new Set([
+      "mc",
+      "multiple_choice",
+      "multiple_response",
+      "completion",
+      "ordered_response",
+    ]);
+
+    for (const group of module.groups) {
+      const packPath = packPaths.get(group.source_pack_id);
+      if (!packPath) {
+        throw new Error("Missing question pack: " + group.source_pack_id);
+      }
+      const pack = await loadPack(packPath);
+      const questionsById = new Map(pack.questions.map((question) => [question.id, question]));
+
+      for (const chapter of group.chapters || []) {
+        if (chapter.question_ids.length !== chapter.expected_question_count) {
+          throw new Error("Question count mismatch in " + chapter.title + ".");
+        }
+        for (const questionId of chapter.question_ids) {
+          const reference = packPath + "|" + questionId;
+          const question = questionsById.get(questionId);
+          if (seenQuestionRefs.has(reference)) {
+            throw new Error("Duplicate question in " + moduleRecord.title + ".");
+          }
+          if (!question) {
+            throw new Error("Question not found in source pack: " + questionId);
+          }
+          if (!supportedTypes.has(question.type || question.question_type)) {
+            throw new Error("Unsupported question type for " + questionId + ".");
+          }
+
+          seenQuestionRefs.add(reference);
+          selectedQuestions.push({ packPath, questionId });
+        }
+      }
+    }
+
+    if (selectedQuestions.length !== moduleRecord.question_count) {
+      throw new Error("The loaded question count does not match the module catalog.");
+    }
+
+    startSelectedQuestions(selectedQuestions, module.title);
+  } catch (error) {
+    studyModulesStatus.textContent = error.message;
+    studyModulesStatus.hidden = false;
   }
-
-  currentSubject = "Custom Quiz";
-  sessionBlockSize = Number(globalBlockSizeSelect.value) || 15;
-
-  blockStart = 0;
-  blockNumber = 1;
-  firstPassCorrect = 0;
-  firstPassMissed = 0;
-  firstPassSkipped = 0;
-
-  beginBlock();
 }
 
 async function resumeSavedSession() {
@@ -1416,6 +1569,21 @@ summaryAction.addEventListener("click", () => {
 });
 
 openQuizBuilderButton.addEventListener("click", showQuizBuilder);
+openStudyModulesButton.addEventListener("click", showStudyModules);
+resumeStudyModulesButton.addEventListener("click", showStudyModules);
+closeStudyModulesButton.addEventListener("click", () => {
+  showSubjects();
+});
+studyModulesList.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-study-module-id]");
+  if (!button) return;
+
+  const moduleRecord = studyModules.find(
+    (module) => module.id === button.dataset.studyModuleId
+  );
+  if (moduleRecord) launchStudyModule(moduleRecord);
+});
+
 closeQuizBuilderButton.addEventListener("click", () => {
   document.body.classList.remove("builder-open");
   showSubjects();
