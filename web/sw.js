@@ -1,6 +1,6 @@
 importScripts("./pack-precache.js");
 
-const CACHE_NAME = `prepflow-pwa-v11-dosage-lab-${self.PREPFLOW_PACK_PRECACHE.version}`;
+const CACHE_NAME = `prepflow-pwa-v12-next-week-test-${self.PREPFLOW_PACK_PRECACHE.version}`;
 
 const APP_FILES = [
   "./",
