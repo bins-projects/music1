@@ -321,7 +321,7 @@ function showQuizBuilder() {
 async function loadStudyModules() {
   if (studyModulesPromise) return studyModulesPromise;
 
-  studyModulesPromise = fetch("./data/study-modules.json")
+  studyModulesPromise = fetch("./data/study-modules.json?v=20261016-next-week-test", { cache: "no-store" })
     .then((response) => {
       if (!response.ok) throw new Error("Could not load study modules.");
       return response.json();
