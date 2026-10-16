@@ -4,7 +4,7 @@
   "modules": [
     {
       "id": "pharm-cancer-endo-diabetes-review-matched-2026",
-      "title": "Pharm Test Review \u2014 Focused",
+      "title": "Pharm Test Review — Focused",
       "description": "Questions selected for the cancer, endocrine, diabetes, and Appendix D test review.",
       "question_count": 169,
       "manifest_path": "./data/study-modules/pharm-test-review-matched-2026.prepflow-module.json",
@@ -14,10 +14,20 @@
     },
     {
       "id": "pharm-cancer-endo-diabetes-related-expanded-2026",
-      "title": "Pharm Test Review \u2014 Expanded Practice",
+      "title": "Pharm Test Review — Expanded Practice",
       "description": "A broader 269-question practice set related to the same review topics; not every item is a confirmed review match.",
       "question_count": 269,
       "manifest_path": "./data/study-modules/pharm-test-review-related-expanded-2026.prepflow-module.json",
+      "supplemental_pack_paths": {
+        "appendix_d": "../packs/appendix_d.prepflow.json"
+      }
+    },
+    {
+      "id": "pharm-test-review-prediction-50-2026",
+      "title": "Pharm Test Prediction — 50 Questions",
+      "description": "A balanced 50-question bank-based prediction experiment across diabetes, other endocrine topics, cancer, and Appendix D.",
+      "question_count": 50,
+      "manifest_path": "./data/study-modules/pharm-test-prediction-50-2026.prepflow-module.json",
       "supplemental_pack_paths": {
         "appendix_d": "../packs/appendix_d.prepflow.json"
       }
