@@ -1,0 +1,155 @@
+{
+  "format": "prepflow_module_selection",
+  "version": "1.0",
+  "module_id": "pharm-test-review-prediction-50-2026",
+  "title": "Pharm Test Prediction — 50 Questions",
+  "description": "A balanced 50-question test-bank sample based on the cancer, endocrine, diabetes, and Appendix D review. It draws 18 diabetes, 20 other endocrine, and 12 cancer/Appendix D questions from the review-matched pool. It is a focused prediction experiment, not a guarantee of exact exam items.",
+  "expected_question_count": 50,
+  "behavior": {
+    "navigation": "subject_then_chapter",
+    "delivery": "one_question_at_a_time",
+    "scoring": "first_attempt_by_chapter",
+    "shuffle": "once_per_chapter",
+    "reuse_existing_quiz_engine": true
+  },
+  "groups": [
+    {
+      "subject": "Pharmacology",
+      "source_pack_id": "pharmacy",
+      "chapters": [
+        {
+          "source_chapter": 21,
+          "title": "Drug Therapy for Diabetes",
+          "expected_question_count": 12,
+          "question_ids": [
+            "PFQ-pharmacy-000000919",
+            "PFQ-pharmacy-000000923",
+            "PFQ-pharmacy-000000924",
+            "PFQ-pharmacy-000000928",
+            "PFQ-pharmacy-000000930",
+            "PFQ-pharmacy-000000932",
+            "PFQ-pharmacy-000000934",
+            "PFQ-pharmacy-000000940",
+            "PFQ-pharmacy-000000945",
+            "PFQ-pharmacy-000000946",
+            "PFQ-pharmacy-000000949",
+            "PFQ-pharmacy-000000955"
+          ]
+        },
+        {
+          "source_chapter": 22,
+          "title": "Drug Therapy for Thyroid and Adrenal Gland Problems",
+          "expected_question_count": 10,
+          "question_ids": [
+            "PFQ-pharmacy-000000980",
+            "PFQ-pharmacy-000000983",
+            "PFQ-pharmacy-000000986",
+            "PFQ-pharmacy-000000987",
+            "PFQ-pharmacy-000000990",
+            "PFQ-pharmacy-000000991",
+            "PFQ-pharmacy-000001004",
+            "PFQ-pharmacy-000001006",
+            "PFQ-pharmacy-000001010",
+            "PFQ-pharmacy-000001016"
+          ]
+        },
+        {
+          "source_chapter": 19,
+          "title": "Drug Therapy for Gastrointestinal Problems",
+          "expected_question_count": 1,
+          "question_ids": [
+            "PFQ-pharmacy-000000839"
+          ]
+        },
+        {
+          "source_chapter": 28,
+          "title": "Drug Therapy For Male Reproductive Problems",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-pharmacy-000001225",
+            "PFQ-pharmacy-000001280"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Medical-Surgical",
+      "source_pack_id": "medical_surgical",
+      "chapters": [
+        {
+          "source_chapter": 7,
+          "title": "The Patient with Cancer",
+          "expected_question_count": 8,
+          "question_ids": [
+            "PFQ-medical_surgical-000000183",
+            "PFQ-medical_surgical-000000184",
+            "PFQ-medical_surgical-000000187",
+            "PFQ-medical_surgical-000000188",
+            "PFQ-medical_surgical-000000189",
+            "PFQ-medical_surgical-000000192",
+            "PFQ-medical_surgical-000000193",
+            "PFQ-medical_surgical-000000194"
+          ]
+        },
+        {
+          "source_chapter": 47,
+          "title": "Endocrine System Introduction",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-medical_surgical-000001116",
+            "PFQ-medical_surgical-000001122"
+          ]
+        },
+        {
+          "source_chapter": 48,
+          "title": "Pituitary and Adrenal Disorders",
+          "expected_question_count": 4,
+          "question_ids": [
+            "PFQ-medical_surgical-000001125",
+            "PFQ-medical_surgical-000001132",
+            "PFQ-medical_surgical-000001139",
+            "PFQ-medical_surgical-000001146"
+          ]
+        },
+        {
+          "source_chapter": 49,
+          "title": "Thyroid and Parathyroid Disorders",
+          "expected_question_count": 4,
+          "question_ids": [
+            "PFQ-medical_surgical-000001148",
+            "PFQ-medical_surgical-000001153",
+            "PFQ-medical_surgical-000001160",
+            "PFQ-medical_surgical-000001168"
+          ]
+        },
+        {
+          "source_chapter": 50,
+          "title": "Diabetes and Hypoglycemia",
+          "expected_question_count": 6,
+          "question_ids": [
+            "PFQ-medical_surgical-000001170",
+            "PFQ-medical_surgical-000001174",
+            "PFQ-medical_surgical-000001180",
+            "PFQ-medical_surgical-000001184",
+            "PFQ-medical_surgical-000001190",
+            "PFQ-medical_surgical-000001198"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Appendix D",
+      "source_pack_id": "appendix_d",
+      "chapters": [
+        {
+          "source_chapter": 1,
+          "title": "Metastasis Case",
+          "expected_question_count": 1,
+          "question_ids": [
+            "PFQ-appendix_d-000000001"
+          ]
+        }
+      ]
+    }
+  ]
+}
