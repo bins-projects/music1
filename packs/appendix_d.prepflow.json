@@ -2,7 +2,7 @@
   "format": "prepflow_pack",
   "version": "1.0",
   "pack_id": "appendix_d",
-  "title": "Appendix D Cancer Case",
+  "title": "Appendix D Anticancer Drugs",
   "questions": [
     {
       "id": "PFQ-appendix_d-000000001",
@@ -33,6 +33,786 @@
       ],
       "rationale": "Cancer cells can leave the original tumor, travel to distant sites, and grow there. This spread is called metastasis; the breast remains the primary site and the tumors in distant organs are metastatic or secondary tumors.",
       "source_record_id": "Appendix-D-Slides-35-36"
+    },
+    {
+      "id": "PFQ-appendix_d-000000002",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which statement best explains why combination chemotherapy uses drugs from different traditional categories?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Each drug targets a different step or feature of cancer-cell growth, increasing the chance of killing cancer cells."
+        },
+        {
+          "label": "B",
+          "text": "Each drug prevents every adverse effect caused by the other drugs."
+        },
+        {
+          "label": "C",
+          "text": "The drugs are selected only to reduce the number of treatment visits."
+        },
+        {
+          "label": "D",
+          "text": "The combination ensures that only cancer cells are affected."
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "rationale": "Appendix D explains that combination protocols use drugs with different actions to kill more cancer cells. Normal tissues may still be injured, and adverse effects may increase.",
+      "source_record_id": "Appendix-D-Slide-14"
+    },
+    {
+      "id": "PFQ-appendix_d-000000003",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Why is chemotherapy given on a planned protocol schedule?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "A schedule prevents chemotherapy from reaching metastatic sites."
+        },
+        {
+          "label": "B",
+          "text": "Timing makes chemotherapy affect only cells in the M phase."
+        },
+        {
+          "label": "C",
+          "text": "The schedule is designed to maximize cancer-cell killing while limiting injury to normal cells."
+        },
+        {
+          "label": "D",
+          "text": "The schedule eliminates the need to monitor adverse effects."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "rationale": "The slides describe timed protocols as a way to maximize the number of cancer cells killed and minimize normal-cell damage. Dose-dense schedules may intensify side effects.",
+      "source_record_id": "Appendix-D-Slide-14"
+    },
+    {
+      "id": "PFQ-appendix_d-000000004",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which normal tissues are especially vulnerable to traditional chemotherapy?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Only tissues that contain hormone receptors."
+        },
+        {
+          "label": "B",
+          "text": "Tissues whose cells divide rapidly, such as blood-forming tissue, intestinal lining, skin, and hair follicles."
+        },
+        {
+          "label": "C",
+          "text": "Only mature nerve and muscle tissue."
+        },
+        {
+          "label": "D",
+          "text": "Tissues protected by a distinct capsule."
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "rationale": "Traditional chemotherapy affects cancer cells and normal rapidly dividing cells, including skin, hair, intestinal tissues, and blood-forming cells.",
+      "source_record_id": "Appendix-D-Slide-8"
+    },
+    {
+      "id": "PFQ-appendix_d-000000005",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "A patient asks why chemotherapy can treat cancer that has spread beyond the original tumor. Which explanation best fits Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Traditional chemotherapy is a local treatment confined to the original tumor."
+        },
+        {
+          "label": "B",
+          "text": "Chemotherapy changes metastatic tumors back into benign tumors."
+        },
+        {
+          "label": "C",
+          "text": "Chemotherapy works only when cancer cells remain inside a capsule."
+        },
+        {
+          "label": "D",
+          "text": "Traditional chemotherapy is systemic and can reach cancer cells at distant sites."
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "rationale": "Unlike local surgery or radiation, traditional chemotherapy is systemic and may reach metastatic cancer cells, although it also affects normal cells.",
+      "source_record_id": "Appendix-D-Slide-8"
+    },
+    {
+      "id": "PFQ-appendix_d-000000006",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which action is characteristic of an alkylating agent?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cross-linking DNA strands so they bind together."
+        },
+        {
+          "label": "B",
+          "text": "Imitating normal metabolites in cellular reactions."
+        },
+        {
+          "label": "C",
+          "text": "Blocking estrogen production in the adrenal gland."
+        },
+        {
+          "label": "D",
+          "text": "Attaching an antibody to a cancer-cell surface target."
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "rationale": "Appendix D describes alkylating agents as cross-linking DNA strands, interfering with cell division.",
+      "source_record_id": "Appendix-D-Slide-10"
+    },
+    {
+      "id": "PFQ-appendix_d-000000007",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "How do antimetabolites interfere with cancer-cell growth?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "They block androgen receptors so testosterone cannot bind."
+        },
+        {
+          "label": "B",
+          "text": "They form a capsule around the tumor."
+        },
+        {
+          "label": "C",
+          "text": "They resemble normal metabolites and fool cancer cells into using them in cellular reactions."
+        },
+        {
+          "label": "D",
+          "text": "They prevent new blood vessels by blocking an estrogen receptor."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "rationale": "Antimetabolites resemble normal metabolites needed for vital cell processes and interfere when cancer cells use them.",
+      "source_record_id": "Appendix-D-Slide-10"
+    },
+    {
+      "id": "PFQ-appendix_d-000000008",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which description matches antitumor antibiotics in Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "They treat bacterial infections by killing bacteria only."
+        },
+        {
+          "label": "B",
+          "text": "They bind with DNA and interfere with enzymes needed for DNA replication."
+        },
+        {
+          "label": "C",
+          "text": "They increase estrogen levels to slow tumor growth."
+        },
+        {
+          "label": "D",
+          "text": "They inhibit aldosterone receptors."
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "rationale": "The slides clarify that antitumor antibiotics are not general infection antibiotics; they bind with DNA and block DNA-copying activity.",
+      "source_record_id": "Appendix-D-Slide-11"
+    },
+    {
+      "id": "PFQ-appendix_d-000000009",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "What is the effect of topoisomerase inhibitors described in Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "They increase the sensitivity of insulin receptors."
+        },
+        {
+          "label": "B",
+          "text": "They prevent testosterone from being produced by the testes only."
+        },
+        {
+          "label": "C",
+          "text": "They make benign tumors invade surrounding tissue."
+        },
+        {
+          "label": "D",
+          "text": "They interfere with an enzyme needed for DNA maintenance, leading to DNA breakage and cell death."
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "rationale": "Topoisomerase inhibitors disrupt the actions needed to maintain DNA during copying, causing DNA breakage and cell death.",
+      "source_record_id": "Appendix-D-Slide-10"
+    },
+    {
+      "id": "PFQ-appendix_d-000000010",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which serious adverse effect is associated in Appendix D with mitotic inhibitors such as vincristine?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Peripheral nerve damage that may be permanent."
+        },
+        {
+          "label": "B",
+          "text": "Excessive estrogen production."
+        },
+        {
+          "label": "C",
+          "text": "Severe hypoglycemia from increased insulin release."
+        },
+        {
+          "label": "D",
+          "text": "Loss of aldosterone with hyperkalemia."
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "rationale": "The slides describe mitotic inhibitors as stopping cell division and note that peripheral nerve damage may be permanent.",
+      "source_record_id": "Appendix-D-Slide-12"
+    },
+    {
+      "id": "PFQ-appendix_d-000000011",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Before an IV chemotherapy infusion, which access finding is important to verify?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "The IV has no blood return so the drug cannot move too quickly."
+        },
+        {
+          "label": "B",
+          "text": "The site is covered so it cannot be observed."
+        },
+        {
+          "label": "C",
+          "text": "The IV is in a large vein with good blood return."
+        },
+        {
+          "label": "D",
+          "text": "The catheter is disconnected until the patient reports discomfort."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "rationale": "Appendix D lists a large vein with good blood return and catheter checks as pre-infusion safety steps.",
+      "source_record_id": "Appendix-D-Slide-17"
+    },
+    {
+      "id": "PFQ-appendix_d-000000012",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "During the first part of an IV chemotherapy infusion, what observation does Appendix D specify?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Leave the patient alone for 30 minutes if baseline vital signs are normal."
+        },
+        {
+          "label": "B",
+          "text": "Stay with the patient for the first 15 minutes and check for allergic reactions every 15 minutes."
+        },
+        {
+          "label": "C",
+          "text": "Check the site only after the infusion is complete."
+        },
+        {
+          "label": "D",
+          "text": "Assess for allergy once at the end of the treatment."
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "rationale": "Appendix D directs the nurse to remain with the patient for the first 15 minutes and monitor every 15 minutes for allergic reactions.",
+      "source_record_id": "Appendix-D-Slide-18"
+    },
+    {
+      "id": "PFQ-appendix_d-000000013",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "How often should the site of an infusing vesicant be assessed to help prevent extravasation?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Once at the start of the infusion."
+        },
+        {
+          "label": "B",
+          "text": "Only if the patient reports pain."
+        },
+        {
+          "label": "C",
+          "text": "At the end of each treatment day."
+        },
+        {
+          "label": "D",
+          "text": "At least every 30 minutes."
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "rationale": "The slides specify assessment of vesicant flow and access site at least every 30 minutes to detect leakage early.",
+      "source_record_id": "Appendix-D-Slide-19"
+    },
+    {
+      "id": "PFQ-appendix_d-000000014",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "A patient develops signs of an acute reaction during chemotherapy. What is the first infusion-related action described in Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Stop the infusion while preserving IV access for assessment and prescribed support treatment."
+        },
+        {
+          "label": "B",
+          "text": "Flush the remaining chemotherapy rapidly into the patient."
+        },
+        {
+          "label": "C",
+          "text": "Remove the IV immediately before assessing the patient."
+        },
+        {
+          "label": "D",
+          "text": "Wait until the next vital-sign check to decide whether to stop."
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "rationale": "For a suspected anaphylactic or adverse reaction, the slides say to prevent more drug from entering by stopping the infusion while keeping IV access available.",
+      "source_record_id": "Appendix-D-Slide-18"
+    },
+    {
+      "id": "PFQ-appendix_d-000000015",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Who should use protective equipment when handling chemotherapy waste or patient excretions after IV chemotherapy?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Only the oncology prescriber during the infusion."
+        },
+        {
+          "label": "B",
+          "text": "Only the patient, and only while in the infusion chair."
+        },
+        {
+          "label": "C",
+          "text": "Workers handling the drugs, waste, or excretions within 48 hours after treatment."
+        },
+        {
+          "label": "D",
+          "text": "No one if the chemotherapy has already been disconnected."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "rationale": "Appendix D calls for PPE when preparing, administering, disposing of chemotherapy, or handling waste/excretions within 48 hours after IV treatment.",
+      "source_record_id": "Appendix-D-Slide-15"
+    },
+    {
+      "id": "PFQ-appendix_d-000000016",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "A breast tumor depends on estrogen for growth. How does the aromatase inhibitor anastrozole help, according to Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "It increases estrogen to protect the endometrium."
+        },
+        {
+          "label": "B",
+          "text": "It reduces estrogen production and lowers circulating estrogen, slowing growth of estrogen-sensitive cancer cells."
+        },
+        {
+          "label": "C",
+          "text": "It directly cross-links tumor DNA as an alkylating agent."
+        },
+        {
+          "label": "D",
+          "text": "It blocks insulin receptors in the tumor."
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "rationale": "The slides state that anastrozole prevents estrogen production in the adrenal gland, reducing blood estrogen and slowing estrogen-sensitive breast cancer growth.",
+      "source_record_id": "Appendix-D-Slide-22"
+    },
+    {
+      "id": "PFQ-appendix_d-000000017",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which adverse effect pattern is associated with aromatase inhibitors in Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Severe hypoglycemia and injection-site lipodystrophy."
+        },
+        {
+          "label": "B",
+          "text": "Peripheral edema with acute hearing loss only."
+        },
+        {
+          "label": "C",
+          "text": "Neutropenia without any other possible effect."
+        },
+        {
+          "label": "D",
+          "text": "Bone, muscle, or joint pain and increased osteoporosis risk."
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "rationale": "Appendix D lists bone, muscle, and joint pain with aromatase inhibitors and notes osteoporosis risk.",
+      "source_record_id": "Appendix-D-Slide-23"
+    },
+    {
+      "id": "PFQ-appendix_d-000000018",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Why may a patient with prostate cancer receive hormone-manipulation therapy?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Androgen signaling can increase growth of some prostate cancer cells, so therapy suppresses androgen production or function."
+        },
+        {
+          "label": "B",
+          "text": "Progesterone directly stimulates prostate-cell growth."
+        },
+        {
+          "label": "C",
+          "text": "Estrogen is required to make prostate cancer cells metastasize."
+        },
+        {
+          "label": "D",
+          "text": "Hormone therapy is used to make chemotherapy local rather than systemic."
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "rationale": "The slides explain that testosterone binding to androgen receptors can increase prostate cancer growth; therapy suppresses androgen production or function.",
+      "source_record_id": "Appendix-D-Slide-25"
+    },
+    {
+      "id": "PFQ-appendix_d-000000019",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which effect should be included when teaching about prostate-cancer hormone therapy described in Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "The medication guarantees the cancer is cured."
+        },
+        {
+          "label": "B",
+          "text": "The therapy commonly causes immediate hair regrowth."
+        },
+        {
+          "label": "C",
+          "text": "Hot flashes, reduced libido, or sexual dysfunction may occur."
+        },
+        {
+          "label": "D",
+          "text": "There are no possible effects on fluid balance or liver enzymes."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "rationale": "Appendix D lists gynecomastia, reduced libido or sexual dysfunction, hot flashes, fluid retention, fatigue, and other possible effects.",
+      "source_record_id": "Appendix-D-Slide-26"
+    },
+    {
+      "id": "PFQ-appendix_d-000000020",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "How can progestin therapy help treat endometrial cancer, according to Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "It increases estrogen exposure to stimulate endometrial growth."
+        },
+        {
+          "label": "B",
+          "text": "Continuous progestin exposure can thin the uterine lining and cause endometrial-cell atrophy."
+        },
+        {
+          "label": "C",
+          "text": "It blocks DNA topoisomerase in all rapidly dividing cells."
+        },
+        {
+          "label": "D",
+          "text": "It causes androgen receptors to bind more strongly."
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "rationale": "The slides explain that progesterone/progestins inhibit endometrial-cell growth; continuous treatment can thin the lining and cause cell atrophy.",
+      "source_record_id": "Appendix-D-Slide-27"
+    },
+    {
+      "id": "PFQ-appendix_d-000000021",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "What must be true for a targeted biologic therapy to work against a particular cancer?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "The cancer must be benign and remain encapsulated."
+        },
+        {
+          "label": "B",
+          "text": "The patient must have received radiation first in every case."
+        },
+        {
+          "label": "C",
+          "text": "The drug must target a feature found only in all normal cells."
+        },
+        {
+          "label": "D",
+          "text": "The cancer cells must have enough of the specific target the drug is designed to affect."
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "rationale": "Appendix D notes that the cancer must express sufficient amounts of the specific target; not all cancers of the same type have the same target.",
+      "source_record_id": "Appendix-D-Slide-30"
+    },
+    {
+      "id": "PFQ-appendix_d-000000022",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which statement best describes how targeted therapy differs from traditional chemotherapy in Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "It focuses on specific cancer-cell features and may spare many normal cells that are rapidly dividing."
+        },
+        {
+          "label": "B",
+          "text": "It affects only the original tumor and cannot reach distant sites."
+        },
+        {
+          "label": "C",
+          "text": "It is guaranteed to cure cancer after one treatment."
+        },
+        {
+          "label": "D",
+          "text": "It works only by causing hair follicles to stop dividing."
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "rationale": "The slides contrast traditional chemotherapy, which affects rapidly dividing normal and cancer cells, with targeted therapy, which focuses on specific cancer-cell features. Targeted therapy still has important risks and is not described as a guaranteed cure.",
+      "source_record_id": "Appendix-D-Slide-30"
+    },
+    {
+      "id": "PFQ-appendix_d-000000023",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which targeted therapy type is described as a lab-made protein that attaches to a specific target on the outside of a cancer cell?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Alkylating agent."
+        },
+        {
+          "label": "B",
+          "text": "Antimetabolite."
+        },
+        {
+          "label": "C",
+          "text": "Monoclonal antibody."
+        },
+        {
+          "label": "D",
+          "text": "Topoisomerase inhibitor."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "rationale": "Appendix D describes monoclonal antibodies as lab-made proteins that attach to specific targets on the outside of cells; antibody therapies can cause allergic reactions.",
+      "source_record_id": "Appendix-D-Slide-31"
+    },
+    {
+      "id": "PFQ-appendix_d-000000024",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "What do tyrosine kinase inhibitors do, according to Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Increase estrogen production to stimulate tumor growth."
+        },
+        {
+          "label": "B",
+          "text": "Inhibit an enzyme involved in cancer-cell growth signaling."
+        },
+        {
+          "label": "C",
+          "text": "Cross-link DNA strands like alkylating agents."
+        },
+        {
+          "label": "D",
+          "text": "Cause all tumor cells to become encapsulated."
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "rationale": "Tyrosine kinases activate proteins in growth pathways. Inhibiting the enzyme can reduce growth signaling and slow or stop cancer-cell growth.",
+      "source_record_id": "Appendix-D-Slide-31"
+    },
+    {
+      "id": "PFQ-appendix_d-000000025",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which adverse-effect pattern is listed for multikinase inhibitors?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Only injection-site irritation with no systemic effects."
+        },
+        {
+          "label": "B",
+          "text": "Severe hypoglycemia as the expected class effect."
+        },
+        {
+          "label": "C",
+          "text": "Low potassium and slow heart rate in every patient."
+        },
+        {
+          "label": "D",
+          "text": "Hypertension, nausea or vomiting, GI effects, and mild bone marrow suppression."
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "rationale": "Appendix D lists hypertension, nausea/vomiting, other GI disturbances, and mild bone marrow suppression among common multikinase inhibitor effects.",
+      "source_record_id": "Appendix-D-Slide-32"
+    },
+    {
+      "id": "PFQ-appendix_d-000000026",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "Which adverse effects are listed for proteasome inhibitors in Appendix D?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Nausea or vomiting, anorexia, GI effects, and peripheral neuropathy."
+        },
+        {
+          "label": "B",
+          "text": "Excess estrogen and increased uterine lining growth."
+        },
+        {
+          "label": "C",
+          "text": "Only mild hair thinning without other effects."
+        },
+        {
+          "label": "D",
+          "text": "Hypercalcemia and kidney stones as the defining pattern."
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "rationale": "The slides list nausea/vomiting, anorexia, GI effects, and peripheral neuropathy as possible effects of proteasome inhibitors.",
+      "source_record_id": "Appendix-D-Slide-33"
+    },
+    {
+      "id": "PFQ-appendix_d-000000027",
+      "chapter": 1,
+      "chapter_title": "Appendix D Anticancer Drugs",
+      "type": "multiple_choice",
+      "stem": "How does Appendix D characterize the goal of biologic targeted cancer therapy?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "It cures every cancer that expresses a target."
+        },
+        {
+          "label": "B",
+          "text": "It replaces all other cancer treatment and removes the need for monitoring."
+        },
+        {
+          "label": "C",
+          "text": "It can provide temporary disease control and prolong time before progression, but is not presented as a cure."
+        },
+        {
+          "label": "D",
+          "text": "It prevents cancer cells from ever developing resistance."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "rationale": "Appendix D describes targeted biologic therapy as temporary control that may delay progression and debilitation; it does not claim a cure, and effectiveness depends on the cancer having the target.",
+      "source_record_id": "Appendix-D-Slide-30"
     }
   ]
 }
