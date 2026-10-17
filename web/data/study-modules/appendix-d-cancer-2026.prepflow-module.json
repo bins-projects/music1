@@ -1,0 +1,161 @@
+{
+  "format": "prepflow_module_selection",
+  "version": "1.0",
+  "module_id": "appendix-d-cancer-2026",
+  "title": "Appendix D",
+  "description": "56 cancer questions: 29 relevant questions selected from the existing Pharmacology and Medical-Surgical banks, plus 27 Appendix D pack questions. New questions are written only from the supplied Appendix D slides; the existing bank questions retain their original answers and rationales.",
+  "expected_question_count": 56,
+  "behavior": {
+    "navigation": "subject_then_chapter",
+    "delivery": "one_question_at_a_time",
+    "scoring": "first_attempt_by_chapter",
+    "shuffle": "once_per_chapter",
+    "reuse_existing_quiz_engine": true
+  },
+  "groups": [
+    {
+      "subject": "Pharmacology",
+      "source_pack_id": "pharmacy",
+      "chapters": [
+        {
+          "source_chapter": 5,
+          "title": "Dosage Calculation Of Intravenous Solutions And Drugs",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-pharmacy-000000162",
+            "PFQ-pharmacy-000000167"
+          ]
+        },
+        {
+          "source_chapter": 19,
+          "title": "Drug Therapy for Gastrointestinal Problems",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-pharmacy-000000839",
+            "PFQ-pharmacy-000000843"
+          ]
+        },
+        {
+          "source_chapter": 28,
+          "title": "Drug Therapy For Male Reproductive Problems",
+          "expected_question_count": 3,
+          "question_ids": [
+            "PFQ-pharmacy-000001225",
+            "PFQ-pharmacy-000001266",
+            "PFQ-pharmacy-000001280"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Medical-Surgical",
+      "source_pack_id": "medical_surgical",
+      "chapters": [
+        {
+          "source_chapter": 7,
+          "title": "The Patient with Cancer",
+          "expected_question_count": 11,
+          "question_ids": [
+            "PFQ-medical_surgical-000000183",
+            "PFQ-medical_surgical-000000184",
+            "PFQ-medical_surgical-000000187",
+            "PFQ-medical_surgical-000000188",
+            "PFQ-medical_surgical-000000189",
+            "PFQ-medical_surgical-000000192",
+            "PFQ-medical_surgical-000000193",
+            "PFQ-medical_surgical-000000194",
+            "PFQ-medical_surgical-000000205",
+            "PFQ-medical_surgical-000000206",
+            "PFQ-medical_surgical-000000208"
+          ]
+        },
+        {
+          "source_chapter": 30,
+          "title": "Hematologic Disorders",
+          "expected_question_count": 1,
+          "question_ids": [
+            "PFQ-medical_surgical-000000743"
+          ]
+        },
+        {
+          "source_chapter": 31,
+          "title": "Immunologic System Introduction",
+          "expected_question_count": 3,
+          "question_ids": [
+            "PFQ-medical_surgical-000000763",
+            "PFQ-medical_surgical-000000764",
+            "PFQ-medical_surgical-000000766"
+          ]
+        },
+        {
+          "source_chapter": 32,
+          "title": "Immunologic Disorders",
+          "expected_question_count": 3,
+          "question_ids": [
+            "PFQ-medical_surgical-000000801",
+            "PFQ-medical_surgical-000000802",
+            "PFQ-medical_surgical-000000803"
+          ]
+        },
+        {
+          "source_chapter": 52,
+          "title": "Female Reproductive Disorders",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-medical_surgical-000001211",
+            "PFQ-medical_surgical-000001222"
+          ]
+        },
+        {
+          "source_chapter": 53,
+          "title": "Male Reproductive System Introduction",
+          "expected_question_count": 2,
+          "question_ids": [
+            "PFQ-medical_surgical-000001226",
+            "PFQ-medical_surgical-000001229"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Appendix D",
+      "source_pack_id": "appendix_d",
+      "chapters": [
+        {
+          "source_chapter": 1,
+          "title": "Appendix D Anticancer Drugs",
+          "expected_question_count": 27,
+          "question_ids": [
+            "PFQ-appendix_d-000000001",
+            "PFQ-appendix_d-000000002",
+            "PFQ-appendix_d-000000003",
+            "PFQ-appendix_d-000000004",
+            "PFQ-appendix_d-000000005",
+            "PFQ-appendix_d-000000006",
+            "PFQ-appendix_d-000000007",
+            "PFQ-appendix_d-000000008",
+            "PFQ-appendix_d-000000009",
+            "PFQ-appendix_d-000000010",
+            "PFQ-appendix_d-000000011",
+            "PFQ-appendix_d-000000012",
+            "PFQ-appendix_d-000000013",
+            "PFQ-appendix_d-000000014",
+            "PFQ-appendix_d-000000015",
+            "PFQ-appendix_d-000000016",
+            "PFQ-appendix_d-000000017",
+            "PFQ-appendix_d-000000018",
+            "PFQ-appendix_d-000000019",
+            "PFQ-appendix_d-000000020",
+            "PFQ-appendix_d-000000021",
+            "PFQ-appendix_d-000000022",
+            "PFQ-appendix_d-000000023",
+            "PFQ-appendix_d-000000024",
+            "PFQ-appendix_d-000000025",
+            "PFQ-appendix_d-000000026",
+            "PFQ-appendix_d-000000027"
+          ]
+        }
+      ]
+    }
+  ]
+}
