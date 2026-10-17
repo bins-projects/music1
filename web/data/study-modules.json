@@ -31,6 +31,16 @@
       "supplemental_pack_paths": {
         "appendix_d": "../packs/appendix_d.prepflow.json"
       }
+    },
+    {
+      "id": "appendix-d-cancer-2026",
+      "title": "Appendix D",
+      "description": "56 cancer questions: 29 selected from the existing Pharm and Medical-Surgical banks, plus 27 questions written from the supplied Appendix D slides.",
+      "question_count": 56,
+      "manifest_path": "./data/study-modules/appendix-d-cancer-2026.prepflow-module.json",
+      "supplemental_pack_paths": {
+        "appendix_d": "../packs/appendix_d.prepflow.json"
+      }
     }
   ]
 }
